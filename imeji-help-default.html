@@ -383,14 +383,16 @@ of deleted.</p>
 <h3 class="imj_sectionHeadline" style="padding:0"><a name="Assign_DOI_to_Collection"></a>Assign a DOI to a Collection</h3>
 
 <p>
-<span style="text-decoration: underline">Note</span>: You can only assign a DOI to a released collection and you can only assign one DOI per collection.</p>
+<span style="text-decoration: underline">Note</span>: You can only assign a DOI to a released 
+collection and you can only assign one DOI per collection.</p>
 
 <ul style="list-style-type: square; padding:0.5em 2%">
   <li>Go to <span style="font-style: italic;">Collections</span>.</li>
   <li>View the collection by clicking on its name.</li>
   <li>Go to <span style="font-style: italic;">Action</span> and click on
-    <span style="font-style: italic;">Add DOI to collection</span>.
-  <li>Now you can decide whether you want to add a DOI manually or to request a DOI from the <a href="http://doi.mpdl.mpg.de/" target="_blank">MPDL DOI service</a>.</li>
+    <span style="font-style: italic;">Add DOI to collection</span>.</li>
+  <li>Now you can decide whether you want to add a DOI manually or to request a DOI from 
+    the <a href="http://doi.mpdl.mpg.de/" target="_blank">MPDL DOI service</a>.</li>
 </ul>
 
 
@@ -610,6 +612,19 @@ The system offers two different searches, the simple search and the advanced sea
 <p>
 The Simple Search is displayed as a free text field on top of every page. Here the 
 user can decide to either search for item, collection or album metadata.</p>
+
+<p>
+Search indexes and operators can be entered optionally, e.g. </p>
+<ul>
+  <li><span style="font-style: italic;">created&lt;="2016-03-01"</span> - to retrieve 
+    all items, collections or alben created at or later than a specific date<./li>
+  <li><span style="font-style: italic;">status="RELEASED" AND filetype="Document"</span>
+    - to retrieve all items of type document in state &quot;released&quot;.</li>
+</ul>
+
+<p>
+Please check the <a href="http://imeji.org/development/technical-specification/search/"
+target="_blank">documention</a> for further details.</p>
 
 <br/>
 <h3 class="imj_sectionHeadline" style="padding:0">Advanced Search</h3>
