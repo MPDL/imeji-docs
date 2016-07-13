@@ -1,5 +1,6 @@
-# imeji-help
-Help of the imeji software
+# imeji-docs
 
-This repository is used to manage the imeji help.
-You can reuse one of this help pages, by setting its `raw` link into the imeji configuration
+This repository is used to manage all the documents used by MPDL services based on imeji, for instance:
+	- the help page
+	- the terms of use
+
