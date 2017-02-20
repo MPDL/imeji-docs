@@ -48,8 +48,8 @@ Contents
 This website uses the imeji software - an open source and community 
 driven development. imeji creates citable research assets by describing, 
 enriching, sharing, exposing and linking data. For a more comprehensive
-introduction, please check the <a href="http://imeji.org/"
-target="_blank">imeji community homepage</a>.</p>
+introduction, please check the <a href="http://imeji.mpdl.mpg.de"
+target="_blank">imeji homepage</a>.</p>
 
 
 <br/>
@@ -66,7 +66,7 @@ the <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT_EMAIL_XXX">sup
 
 <p>
 When you are interested in an Edmond account you can register yourself. <br/>
-As the main target group of Edmond are MPG sientists, everyone registering without an MPS e-mail account 
+As the main target group of Edmond are MPS sientists, everyone registering without an MPS e-mail account 
 will only get very restricted rights. If further rights are required please contact the 
 <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a>. </span>
 
@@ -96,25 +96,12 @@ user is not logged in, the list contains released collections only.</p>
 
 <p>
 In the Collection List, users can change the number of hits displayed per page.
-Further on, the sorting can be modified and following filters can be applied:</p>
-
-<ul style="list-style-type: square; padding:0 0 0.5em 2%">
-  <li><span style="font-style: italic;">All (except discarded)</span> 
-    = all collections visible to the user, except discarded collections</li>
-  <li><span style="font-style: italic;">My (except discarded)</span> 
-    = all collections created by or shared with the user, except discarded collections</li>
-  <li><span style="font-style: italic;">Only private</span> 
-    = all collections in the state &quot;private&quot;, created by or shared with the user</li>
-  <li><span style="font-style: italic;">Only published</span> 
-    = all collections in the state &quot;released&quot;</li>
-  <li><span style="font-style: italic;">Only discarded</span> 
-    = all collections in the state &quot;discarded&quot;, created by or shared with the user</li>
-</ul>
+Further on, the sorting can be modified and several filters can be applied.</p>
 
 <p>
 The status of the collection is indicated by the icon right to its name: 
-Private collections are tagged with a lock, discarded collections with a 
-trash bin and released collections are not accompanied by an icon.</p>
+Published collections are tagged with a globe, shared collections with a crowed symbol, discarded collections with a 
+minus and private collections are not accompanied by an icon.</p>
 
 
 <br/>
@@ -241,8 +228,7 @@ Assign /Edit metadata values:</span></p>
 
 <ul style="list-style-type: square; padding:0.5em 2%">
   <li>Go to <span style="font-style: italic;">Collections</span>.</li>
-  <li>Click on <span style="font-style: italic;">View items</span> for 
-    the corresponding collection.</li>
+  <li>View the items by clicking on the collection name.</li>
   <li>Select the items you want to assign metadata to.</li>
   <li>Go to <span style="font-style: italic;">Selected</span> and click on
     <span style="font-style: italic;">Edit selected</span>.</li>
@@ -289,7 +275,7 @@ Assign /Edit metadata values:</span></p>
   <li>Go to <span style="font-style: italic;">Collections</span>.</li>
   <li>View the collection by clicking on the name of the collection.</li>
   <li>Go to <span style="font-style: italic;">Edit</span> and click on
-    <span style="font-style: italic;">Edit collection metadata</span>.</li>
+    <span style="font-style: italic;">Edit collection information</span>.</li>
   <li>On the next screen:
     <ul style="list-style-type: circle; padding:0.5em 4%">
       <li>Modify the values you wish to update.</li> 
@@ -307,10 +293,6 @@ Assign /Edit metadata values:</span></p>
 <h3 class="imj_sectionHeadline" style="padding:0"><a name="Share_Collection"></a>Share a Collection</h3>
 
 <p>
-<span style="text-decoration: underline">Note</span>: Collections can only
-be shared with existing users or user groups. Please contact the 
-<span style="font-style: italic;"><a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a></span> 
-to request additional accounts or groups.</p>
 
 <ul style="list-style-type: square; padding:0.5em 2%">
   <li>Go to <span style="font-style: italic;">Collections</span>.</li>
@@ -320,9 +302,15 @@ to request additional accounts or groups.</p>
   <li>Decide to share the collection with an individual user or a user group.</li>
   <li>Enter the email address of the user or select the user group.</li>
   <li>Choose the grants you want to assign to the user or the user group.</li>
+  <li>Choose wheather the selected users should get an information mail or not.</li>
   <li>Click on <span style="font-style: italic;">Save</span>.</li>
 </ul>
 
+<span style="text-decoration: underline">Note</span>: Users that do not have an Edmond account will get an eMail 
+invitation to create themself an account so that they can view the items shared with them. <br/>
+User Groups can only be created by users with administrator rights. 
+Please contact the <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a></span> 
+to request groups.</p>
 
 <br/>
 <h3 class="imj_sectionHeadline" style="padding:0"><a name="Release_Collection"></a>Release a Collection</h3>
@@ -437,15 +425,11 @@ queries, e.g.</p>
     - to retrieve all items of type document in state &quot;released&quot;.</li>
 </ul>
 
-<p>
-Please check the <a href="http://imeji.org/development/technical-specification/search/"
-target="_blank">documention</a> for further details on the query syntax.</p>
-
 <br/>
 <h3 class="imj_sectionHeadline" style="padding:0">Advanced Search</h3>
 
 <p>
-The Advanced Search is currently restricted to item metadata. First the user has 
+The Advanced Search is currently restricted to item metadata and fulltext. First the user has 
 to select the appropriate metadata profile. Afterwards the search scope can be 
 restricted to a specific collection. Please choose a metadata element and
 enter or select the term you are looking for. Further search fields can be
