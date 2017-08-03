@@ -1,56 +1,48 @@
-<h2 class="imj_sectionHeadline">Help Contents</h2>
-
-	<h3 class="imj_sectionHeadline"><a href="#start">Start</a></h3>
+<h3 class="imj_sectionHeadline"><a href="#start">Start with IMEJI</a></h3>
 <p>
 	<a href="#Register">Register</a><br/>
 	<a href="#change_password">Change Password</a><br/>
 	<a href="#forgot_password">Forgot Password</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#collections">Collections</a></h3>
+<h3 class="imj_sectionHeadline"><a href="#collections">Collections</a></h3>
 <p>
 	<a href="#Create_Collection">Create Collection</a><br/>
 	<a href="#Edit_Collection_Metadata">Edit Collection Information</a><br/>
 	<a href="#Share_Collection">Share Collection</a><br/>
-	<a href="#Delete__Discard_Collection">Delete Colletion</a><br/>
+	<a href="#Release_Collection">Release Collection</a><br/>
+	<a href="#Delete__Discard_Collection">Delete / Discard Colletion</a><br/>
+	<a href="#Assign_DOI_to_Collection">Assign DOI to Collection</a><br/>
+	<a href="#Cite_Collection">Cite Collection</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
+<h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
 <p>
 	<a href="#upload">File upload</a><br/>
 	<a href="#edit_item">Describe Items</a><br/>
 	<a href="#edit_license">Add License</a><br/>
-	<a href="#delete_item">Delete Items</a><br/>
+	<a href="#delete_item">Delete / Discard Items</a><br/>
 	<a href="#move_item">Move Items</a><br/>
 	<a href="#download_item">Download Items</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#search">Browse and Search</a></h3>
+<h3 class="imj_sectionHeadline"><a href="#search">Browse and Search</a></h3>
 <p>
 	<a href="#browse">Browse</a><br/>
 	<a href="#simple_search">Simple Search</a><br/>
 	<a href="#advanced_search">Advanced Search</a><br/>
 </p>
-
-	<h3 class="imj_sectionHeadline"><a href="#contact">Contact</a></h3>
-
+<h3 class="imj_sectionHeadline"><a href="#contact">Contact</a></h3>
 
 
 <hr style="width: 100%; height: 2px;">
-<h2 class="imj_sectionHeadline" style="padding:0"><a id="start"></a>Start</h2>
-
-<p>
-This website uses the imeji software - an open source and community driven development. imeji creates citable research assets by describing, 
-enriching, sharing, exposing and linking data. For a more comprehensive introduction, please check the <a href="https://github.com/imeji-community/imeji/"
-target="_blank">imeji github pages</a>.
-</p>
-
+<h2 class="imj_sectionHeadline" style="padding:0"><a id="start"></a>Start with IMEJI</h2>
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Register"></a>Register</h3>
 
 <ol style="padding:0.5em 2%; list-style-type: decimal;">
   <li>Go to the <a href="register" target="_blank">registration</a> page.</li>
-  <li>Fill in the form with at least your e-mail, your family name and your organization. </li>
+  <li>Fill in the form with at least your e-mail, your family name and your organization.</li>
   <li>Agree to the Terms of Use and click on <i>Register now</i>. You will get a confirmation message via e-mail.</li>
   <li>Click on the confirmation link from this e-mail to be redirected to a confirmation page.</li>
-  <li>On the confirmation page, enter the password that was sent with the confirmation e-mail and log into the system.</li>
+  <li>On the confirmation page, enter the password that was sent with the confirmation e-mail and login to the system.</li>
 </ol> 
 
 <p>
@@ -70,6 +62,7 @@ You have to be logged in.
   <li>Click on <i>Change password</i>. Your new password is saved.</li>
 </ol> 
 
+
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="forgot_password"></a>Forgot Password</h3>
 
 <p>
@@ -82,12 +75,11 @@ Currently, it is not possible to reset the password automatically. Therefore, pl
 <h2 class="imj_sectionHeadline" style="padding:0"><a id="collections"></a>Collections</h2>
 
 <p>
-Collections provide the main folder structure within the system and are required to upload and organize items. 
+Collections provide the main folder structure within IMEJI and are required to upload and organize items. 
 </p>
 
 <p>
-All available collections are listed to logged-in users below <a href="collections?q=" target="_blank">COLLECTIONS</a>. The collection list can be filtered by the owner of the collection.
-Shared collections are marked by a people icon on the right side of the page.
+All available collections are listed below <a href="collections?q=" target="_blank">COLLECTIONS</a>. If the user is not logged in, only released collections are displayed. Logged in users will also see private and discarded collections visible to them. The collection list can be filtered by their state and creator. Released collections are marked by a globe icon, shared collections by a people icon on the right side of the page.
 </p>
 
 
@@ -99,12 +91,11 @@ Users require the appropriate authorization to create new collections. For any q
 
 <ol style="padding:0.5em 2%; list-style-type: decimal;">
   <li>Go to the <a href="collections?q=" target="_blank">collections</a> overview page and click on <i>New collection</i>. </li>
-  <li>Enter at least the required information (collection name, author name and organization). Information on further authors, a description of the collections content, additional information 
-   (like a link to a website or publication) and a collection logo can be added optionally. Further on, an e-mail notification on item download can be activated. </li>
+  <li>Enter at least the required information (collection name, author name and organization). Information on further authors, a description of the collections content, additional information (like a link to a website or publication) and a collection logo can be added optionally. Further on, an e-mail notification on item download can be activated. </li>
   <li>Via the plus (and minus) buttons, further fields for authors and organizations can be added (or removed).</li>
   <li>Click on <span style="font-style: italic;">Save</span>.</li>
 </ol>
-
+<br/>
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Edit_Collection_Metadata"></a>Edit Collection Information</h3>
 
@@ -118,13 +109,13 @@ Users require the appropriate authorization to create new collections. For any q
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Share_Collection"></a>Share Collection</h3>
 
 <p>
-Following three different types of sharing rights are offered for a collection:
+imeji offers three different types of sharing rights for a collection:
 </p>
 
 <ul style="padding:0.5em 2%; list-style-type: square;">
   <li><b>Read:</b> Permission to view the collection information as well as all included items, their files and metadata.</li>
-  <li><b>Edit:</b> Extends the Read permission by the right to edit the collection information, existing items and item licenses, as well as the right to upload new files and to delete items from the collection.</li>
-  <li><b>Admin:</b> Extends the Edit permission by the right to share and to delete the collection.</li>
+  <li><b>Edit:</b> Extends the Read permission by the right to edit the collection information, existing items and item licenses, as well as the right to upload new files and to delete/discard items from the collection.</li>
+  <li><b>Admin:</b> Extends the Edit permission by the right to share, to release and to delete/discard the collection.</li>
 </ul>
 
 <p>
@@ -143,14 +134,14 @@ To share a collection with a user or user group:
   	  <li>By activating <i>Send e-mail</i> the user(s) will get an e-mail notification about the sharing.</li>
   	  <li>Click on <i>Share</i>.</li>
           <li>If one or several of the chosen users haven't registered before, a message will appear where you can decide if the new user(s) should be invited to register or if you want to cancel the sharing process. 
-          Choosing <i>Invite</i> will send an e-mail with registration details to the entered e-mail address(es).</li>
+          Choosing <i>Invite</i> will send an e-mail with registration details to the entered e-mail address(es). </li>
         </ol>
       </li>
-      <li><b>[If available] Share with a user group</b> (This function is only available if at least one user group exists. User groups can be created by the system administrators.):
+      <li><b>[If available] Share with a user group</b> (This function is only available if at least one user group exists within imeji. User groups can be created by the system administrators.):
 	<ol style="padding:0.5em 2%; list-style-type:lower-roman">
           <li>Select at least one user group from the list.</li>
 	  <li>Select the permission that should be shared with the user group.</li>
-  	  <li>By activating <i>Send e-mail</i> all users within the selected user group(s) will get an e-mail notification about the sharing.</li>
+  	  <li>By activating <i>Send e-mail</i> all users within the selected user group(s) will get an e-mail notification about the sharing. </li>
   	  <li>Click on <i>Share</i>.</li>
 	</ol>
       </li>
@@ -159,18 +150,72 @@ To share a collection with a user or user group:
 </ol>
 
 
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="Delete__Discard_Collection"></a>Delete Collection</h3>
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Release_Collection"></a>Release Collection</h3>
 
 <p>
-This action vanishes the collection and all included items from the system without any traces. 
+You can only release private collections. A release makes the collection and all its content permanently visible to the public. Afterward, neither the collection nor the items can be deleted any longer, 
+they need to be <a href="#Delete_Discard_items">discarded</a> instead. But a release does not freeze the collection completely, in particular new items can still be added and metadata keeps editable, too.
 </p>
 
 <ol style="padding:0.5em 2%; list-style-type:decimal">
-  <li>Go to the collection you want to delete.</li>
-  <li>In the menu <i>Collection</i>, click on <i>Delete</i>.</li>
-  <li>Click on <i>Delete</i> to confirm the action.</li>
+  <li>Go to the collection you want to release.</li>
+  <li>In the menu <i>Collection</i>, click on <i>Release</i>.</li>
+  <li>A confirmation message appears which includes the information on how many items within the collection do not have a license assigned. These items will automatically get the default license 
+  if you continue the release. In order to avoid this, click on <i>Cancel</i> and do the license assignment manually (see <a href="#edit_license">Add license</a>).</li>
+  <li>Click on <i>Release</i>.</li>
 </ol>
 
+
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Delete__Discard_Collection"></a>Delete / Discard Collection</h3>
+
+<p>
+Private collections can be deleted, released collections discarded. The difference between the two options is:
+</p>
+
+<ol style="padding:0.5em 2%; list-style-type:square">
+  <li><b>Deleted</b> collections will be vanished from the system without any traces.</li>
+  <li><b>Discarded</b> collections have been released before and, therefore, need to be kept persistent. Discarded means that the collection and all included items are not listed via the standard search and browse functionalities any longer.
+  But some basic metadata and the discard comment will be kept and displayed if the collection is requested via its URL or DOI. Further on, the collection administrator can still see the remaining information when 
+  filtering his collection list for discarded collections.</li>
+</ol>
+
+<p>
+To delete / discard a collection:
+</p>
+
+<ol style="padding:0.5em 2%; list-style-type:decimal">
+  <li>Go to the collection you want to delete / discard.</li>
+  <li>In the menu <i>Collection</i>, click on
+    <ol style="padding:0.5em 2%; list-style-type:lower-alpha">
+      <li>[If the collection is private] <i>Delete</i>.</li>
+      <li>[If the collection is released] <i>Discard</i>.</li>
+      <li>[If the collection is released] Enter a discard comment which explains why the collection needs to be withdrawn. The comment has to be inserted before the discard can be confirmed.</li>
+      <li>Click on <i>Delete</i> or <i>Discard</i>.
+    </ol>
+</ol>
+
+
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Assign_DOI_to_Collection"></a>Assign DOI to Collection</h3>
+
+<p>
+You can only assign a DOI to a released collection and you can only assign one DOI per collection. That means as soon as a collection already has an DOI, this functionality is not possible any more.
+</p>
+
+<ol style=" padding:0.5em 2%; list-style-type:decimal">
+  <li>Go to the collection to which you want to assign a DOI to.</li>
+  <li>In the menu <i>Collection</i>, click on <i>Add DOI to collection</i>.</li>
+  <li>Accept the terms of use for the DOI assignment.</li>
+  <li>You can now <a href="#Cite_Collection">cite your collection</a> with the assigned DOI.</li>
+</ol>
+
+
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Cite_Collection"></a>Cite collection</h3>
+
+<ol style="padding:0.5em 2%; list-style-type:decimal">
+  <li>Go to the collection you want to cite.</li>
+  <li>Click on <i>more</i>, right next to the collection author.</li>
+  <li>Copy the text displayed under <i>Cite as</i></span>.
+</ol>
 
 
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
@@ -184,6 +229,7 @@ This action vanishes the collection and all included items from the system witho
 <ol style="padding:0 0 0.5em 2%; list-style-type: decimal;">
   <li>Go to the <a href="upload" target="_blank">upload page</a>.</li>
   <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to upload your files to.</li>
+  <li>If you choose a released collection (marked by the globe icon in front of the collection name), you have to choose a license for the new file(s).</li>
   <li>Select file(s) or drag and drop file(s) into the drop area.</li>
 </ol> 
 
@@ -192,26 +238,24 @@ Following errors may occur when trying to upload files:
 </p>
 
 <ul style="padding:0.5em 2%; list-style-type: square;">
-  <li><b><a id="upload_error_quota"></a>Data quota exceeded</b>: Per default, users have a data quota of 1 GB. If this quota is used up, please contact:
+  <li><b><a id="upload_error_quota"></a>Data quota exceeded</b>: Per default, IMEJI users have a data quota of 1 GB. If this quota is used up, please contact:
     <ul style="list-style-type: circle; padding:0.5em 2%">
       <li>The <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a> if you are the creator of the collection.</li>
       <li>The owner of the collection, if the collection has been shared. You can find the owner of the collection on the share icon.</li>
     </ul>
   </li>
-  <li><b><a id="upload_error_file_format"></a>File format not allowed</b>: For security reasons, the system restricts the list of authorized file formats. 
-  To get more information, please contact the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a>./li>
-  <li><b><a id="upload_error_not_allowed_upload"></a>You do not have any permissions to upload items or create collections</b>: Your account is neither 
-  authorized to create a new collection, nor has the permission to upload files in at least one collection. Please ask the 
-  <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a> for authorization to create collections.</li>
+  <li><b><a id="upload_error_file_format"></a>File format not allowed</b>: For security reasons, IMEJI restricts the list of authorized file formats. To get more information, please contact the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a>.</span></li>
+  <li><b><a id="upload_error_not_allowed_upload"></a>You do not have any permissions to upload items or create collections</b>: Your account is neither authorized to create a new collection, nor has the permission to upload files in at least one collection. Please ask the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a> for authorization to create collections.</li>
 </ul>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="edit_item"></a>Describe Items</h3>
 
 <p>
-Following three ways are offered to describe your items with metadata:
+imeji offers you three different ways to describe your items with metadata:
 </p>
-<ul style="padding:0 0 0.5em 2%; list-style-type: square;">
+
+<ul style="padding:0 0 0.5em 2%"; list-style-type: square;>
   <li><b>Single edit</b>: <a href="#edit_item_single">Describe one item</a></li>
   <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe several items of one collection</a></li>
   <li><b>Collection edit</b>: <a href="#edit_item_all">Describe all items of one collection</a></li>
@@ -224,13 +268,11 @@ Following three ways are offered to describe your items with metadata:
   <li>Go the item you want to describe with metadata.</li>
   <li>Click on <i>Edit</i>.</li>
   <li>Fill the form.</li>
-  <li>[If you want to add a new metadata element] Click on <i>Add metadata</i>.
+  <li>[If you want to add a new metadata element] Click on <i>Add metadata</i>:
     <ol style="padding:0 0 0.5em 2%; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether the desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new 
-      metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata 
-      element is added to the form of your item.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is added to the form of your item.</li>
     </ol>
   </li>
   <li>Click on <i>Save</i>.</li>
@@ -244,13 +286,11 @@ Following three ways are offered to describe your items with metadata:
   <li>Select the items you want to edit.</li>
   <li>In the menu <i>X Selected Items</i>, click on <i>Edit</i>.</li>
   <li>This opens a table with one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
-  <li>Add new metadata elements by clicking on <i>Add Column</i>.
+  <li>Add new metadata elements by clicking on <i>Add Column</i>:
     <ol style="padding:0 0 0.5em 2%; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether your desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new 
-      metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element 
-      is added to the table.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is added to the table.</li>
     </ol>
   </li>
   <li>Edit metadata values:
@@ -260,7 +300,7 @@ Following three ways are offered to describe your items with metadata:
       <li>Remove all values of a column by clicking on <span class="fa fa-times"></span> at the top of the column.</li>
       <li>Remove a column by clicking on <span class="fa fa-trash"></span> at the top of the column.</li>
       <li>Change the name of column by clicking on <span class="fa fa-cog"></span> at the top of the column.</li>
-<--      <li>Hide a column by clicking on <span class="fa fa-caret-left"></span> at the top of the column.</li> -->
+<!--      <li>Hide a column by clicking on <span class="fa fa-caret-left"></span> at the top of the column.</li> -->
     </ol>
   </li>
   <li>Click on <i>Save</i>.</li>
@@ -272,12 +312,12 @@ Following three ways are offered to describe your items with metadata:
   <li>Go to the collection containing the items you want to edit.</li>
   <li>[If some items are selected], click on <i>Select none.</i></li>
   <li>In the menu <i>X Items</i>, click on <i>Edit all</i>.</li>
-  <li>Click on <i>Select metadata</i>.
+  <li>Click on <i>Select metadata</i>:
     <ol style="padding:0 0 0.5em 2%; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether your desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element 
-      by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is editable.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by defining a name (label), a type and optionally some predefined values. 
+      After clicking <i>Save</i> the metadata element is editable.</li>
     </ol>
   </li>
   <li>Enter a value.</li>
@@ -295,7 +335,7 @@ Following three ways are offered to describe your items with metadata:
 
 <ol style="padding:0 0 0.5em 2%; list-style-type:decimal">
   <li>Go the collection containing the items you want to add the license to.</li>
-  <li>Choose one of the following options.
+  <li>Choose one of the following options:
     <ol style="padding:0 0 0.5em 2%; list-style-type:lower-alpha">
       <li>Single edit: Go to the item and click on <i>Edit</i>. Together with all the other metadata, the license is displayed at the top of the form and can be edited.</li>
       <li>Batch edit: Select some items and click on <i>Edit all licenses</i> in menu <i>X Selected Items</i>.</li>
@@ -308,31 +348,59 @@ Following three ways are offered to describe your items with metadata:
       <li>Click on <i>Enter your own license</i> and enter you license information.</li>
     </ol>
   </li>
-  <li>Click on <i>Save</i>.
-  <li>Choose if you want to replace the license of items that already have a license.</li>
+  <li>Click on <i>Save</i>
+    <ol style="padding:0 0 0.5em 2%; list-style-type:lower-alpha">
+      <li>[If the collection is private] Choose if you want to replace the license of items that already have a license.</li>
+      <li>[If the collection is released] The new license will be added to the item(s). Previous license will be discarded with a time stamp.</li>
+    </ol>
+  </li>
 </ol>
 
 
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="delete_item"></a>Delete Items</h3>
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="delete_item"></a>Delete / Discard Items</h3>
 
 <p>
-Deleted items will be vanished from the system without any traces.
+Items within private collections can be deleted, items within released collections discarded. The difference between these two options is:
+</p>
+
+<ul style="padding:0.5em 2%; list-style-type: square;">
+  <li><b>Deleted</b> items will be vanished from the system without any traces.</li>
+  <li><b>Discarded</b> items have been published within a released collection before and, therefore, need to be kept persistent. Discarded means that the item itself cannot be 
+  be retrieved via the standard search and browse functionalities any longer, but the item metadata is still displayed if a user filters the content of a collection for discarded items.</li>
+</ul>
+
+<p>
+To delete / discard items:
 </p>
 
 <ol style="padding:0 0 0.5em 2%; list-style-type: decimal;">
-  <li>Go to the collection containing the items you want to delete.</li>
-  <li>Choose one the following option:
+  <li>Go to the collection containing the items you want to delete / discard.
     <ol style="padding:0 0 0.5em 2%; list-style-type: lower-alpha;">
-      <li>Go to item and click on <i>Delete</i>.</li>
-      <li>Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
-      <li>Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
+      <li>[If the collection is private] Choose one the following option:
+        <ol style="padding:0 0 0.5em 2%; list-style-type: lower-roman;">
+          <li>Go to item and click on <i>Delete</i>.</li>
+          <li>Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
+          <li>Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
+        </ol>
+      </li>
+      <li>[If the collection is released] Choose one of the following options:
+        <ol style="padding:0 0 0.5em 2%; list-style-type: lower-roman;">
+          <li>Go to the item and click on <i>Discard</i>.</li>
+          <li>Select some items and click on <i>Discard items</i> in the menu <i>X Selected Items</i>.</li>
+        </ol>
+      </li>
     </ol>
   </li>
-  <li>Click on <i>Delete</i> to confirm the action.</li>
+  <li>[If the collection is released] Enter a discard comment which explains why the item needs to be withdrawn. The comment has to be inserted before the discard can be confirmed.</a>
+  <li>Click on <i>Delete</i> or <i>Discard</i> to confirm the action.</li>
 </ol>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="move_item"></a>Move Items</h3>
+
+<p>
+You can only move items from private collections.
+</p>
 
 <ol style="padding:0 0 0.5em 2%; list-style-type: decimal;">
   <li>Go to the collection containing the items you want to move.</li>
@@ -343,6 +411,7 @@ Deleted items will be vanished from the system without any traces.
     </ol>
   </li>
   <li>Select the collection you want to move the item(s) to from the list of all collections you have at least editing rights for.</li>
+  <li>[If the target collection is released] Select a license for the moved items and click on <i>Move</i>.</li>
 </ol>
 
 
@@ -367,7 +436,7 @@ There are different ways to download items:
 <h3 class="imj_sectionHeadline"><a id="browse"></a>Browse</h3>
 
 <p>
-Click on <a href="browse" target="_blank">Browse</a> to view the list of items visible to you.
+Click on <a href="browse" target="_blank">Browse</a> to view the list of available items, comprising all released items and private items visible to you.
 </p>
 
 
@@ -375,7 +444,7 @@ Click on <a href="browse" target="_blank">Browse</a> to view the list of items v
 
 <p>
 The Simple Search box is offered in the top navigation bar of each page. It allows you to search for items or collections.
-</p>
+<p/>
 
 <ul style="padding:0.5em 2%; list-style-type: square;">
   <li>The item search covers all available metadata as well as the item's full text (if applicable, e.g. for text documents like pdf or doc).</li>
@@ -404,11 +473,9 @@ The advanced search is restricted to items and is compatible with the <a href="h
   <li>3. Click on <i>Search</i>.</li>
 </ol>
 
-
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
 <hr style="width: 100%; height: 2px;">
-<h2 class="imj_sectionHeadline" style="padding:0"><a id="contact"></a>Contact</h2>
-
+<h2 class="imj_sectionHeadline"><a id="contact"></a>Contact</h2>
 <p>
 For further support, please contact the <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a></span>.
 </p>
