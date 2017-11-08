@@ -27,7 +27,7 @@
 	<a href="#Delete__Discard_Collection">Delete / Discard Collection</a><br/>
 	<a href="#Assign_DOI_to_Collection">Assign DOI to Collection</a><br/>
 	<a href="#Cite_Collection">Cite Collection</a><br/>
-	<a href="#Subscribe_Collection">Subscribe to Collection</a><br/>
+	<a href="#Subscribe_Collection">Subscribe / Unsubscribe to Collection</a><br/>
 </p>
 	<h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
 <p>
@@ -212,7 +212,7 @@ To delete / discard a collection:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>[If the collection is private] <i>Delete</i>.</li>
       <li>[If the collection is released] <i>Discard</i>.</li>
-      <li>[If the collection is released] Enter a discard comment which explains why the collection needs to be withdrawn. The 
+      <li>[If the collection is released] Enter a discard comment which explains why the collection needs to be discarded. The 
         comment has to be inserted before the discard can be confirmed.</li>
       <li>Confirm the action by clicking on <i>Delete</i> or <i>Discard</i>.</li>
     </ol>
@@ -224,11 +224,11 @@ To delete / discard a collection:
 
 <p>
 You can only assign a DOI to a released collection and you can only assign one DOI per collection. That means as soon as a collection
-already has an DOI, this functionality is not possible any more.
+already has a DOI, this functionality is not possible any more.
 </p>
 
 <ol style=" padding:0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection to which you want to assign a DOI to.</li>
+  <li>Go to the collection to which you want to assign a DOI.</li>
   <li>In the menu <i>Collection</i>, click on <i>Add DOI to collection</i>.</li>
   <li>Accept the terms of use for the DOI assignment.</li>
   <li>You can now <a href="#Cite_Collection">cite your collection</a> with the assigned DOI.</li>
@@ -244,7 +244,7 @@ already has an DOI, this functionality is not possible any more.
 </ol>
 
 
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="Subscribe_Collection"></a>Subscribe to collection</h3>
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Subscribe_Collection"></a>Subscribe / Unsubscribe to collection</h3>
 
 <p>
 By subscribing to a collection you will receive an automatic notification if new items are added to the collection or 
@@ -253,13 +253,13 @@ there aren´t any changes within the last 24 hours, no e-Mail will be delivered.
 </p>
 
 <ol style=" padding:0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection to which you want to subscribe to.</li>
-  <li>In the menu <i>Collection</i>, click on <i>Subscribe</i>.</li>
-  <li>Confirm the action by clicking on <i>Subscribe</i>.</li>
+  <li>Go to the collection you want to subscribe / unsubscribe.</li>
+  <li>In the menu <i>Collection</i>, click on <i>Subscribe / Unsibscribe</i>.</li>
+  <li>Confirm the action by clicking on <i>Subscribe / Unsibscribe</i>.</li>
 </ol>
 
 <p>
-Collection subscriptions can be canceled via the collection page or via your <a href="#unsubscribe_collection">user profile</a>.
+Further on, Collection subscriptions can be canceled via your <a href="#unsubscribe_collection">user profile</a>.
 </p>
 
 
@@ -276,7 +276,7 @@ To upload a new file to the system:
 
 <ol style="padding:0 0 0.5em 2em; list-style-type: decimal;">
   <li>Go to the <a href="upload" target="_blank">upload</a> page.</li>
-  <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to upload your files to.</li>
+  <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to upload your files.</li>
   <li>If you choose a released collection (marked by the globe icon in front of the collection name), you have to choose a license for the new file(s).</li>
   <li>Select file(s) or drag and drop file(s) into the drop area.</li>
 </ol> 
@@ -302,7 +302,7 @@ Following errors may occur when trying to upload files:
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="edit_item"></a>Describe Items</h3>
 <p>
-The system offers you three different ways to describe your items with metadata:
+The system offers three different ways to describe your items with metadata:
 </p>
 
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
@@ -317,7 +317,7 @@ The system offers you three different ways to describe your items with metadata:
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
   <li>Go to the item you want to describe with metadata.</li>
   <li>Click on <i>Edit</i>.</li>
-  <li>Fill the form.</li>
+  <li>Fill in the form.</li>
   <li>[If you want to add a new metadata element] Click on <i>Add metadata</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
@@ -350,9 +350,9 @@ The system offers you three different ways to describe your items with metadata:
       <li>Edit a single cell by clicking on <span class="fa fa-plus"></span> to add a new value or <span class="fa fa-times"></span> to remove a value.</li>
       <li>Add a value to a whole column by clicking on <span class="fa fa-pencil-square-o"></span> and confirming via <i>Add to all</i>.</li>
       <li>Remove all values of a column by clicking on <span class="fa fa-times"></span> at the top of the column.</li>
-      <li>Remove a column by clicking on <span class="fa fa-trash"></span> at the top of the column.</li>
+      <li>Remove a column by clicking on <span class="fa fa-trash"></span> at the top of the column. A column can not be removed when it is defined as a default metadata by the sysdtem administrator.</li>
       <li>Change the name of column by clicking on <span class="fa fa-cog"></span> at the top of the column.</li>
-<!--      <li>Hide a column by clicking on <span class="fa fa-caret-left"></span> at the top of the column.</li> -->
+      <li>Hide a column by clicking on <span class="fa fa-caret-left"></span> at the top of the column.</li>
     </ol>
   </li>
   <li>Click on <i>Save</i>.</li>
@@ -385,7 +385,7 @@ The system offers you three different ways to describe your items with metadata:
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="edit_license"></a>Add License</h3>
 <p>
-Licenses provide users possibilities to reuse the files shared with them and their usage is highly recommended.
+Licenses regulate the reuse of files. Therefore all published items must have a license. Also for shared items, a license is highly recommended.
 </p>
 
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
@@ -446,7 +446,7 @@ To delete / discard items:
       </li>
     </ol>
   </li>
-  <li>[If the collection is released] Enter a discard comment which explains why the item needs to be withdrawn. The comment has to be inserted before the discard can be confirmed.</a>
+  <li>[If the collection is released] Enter a discard comment which explains why the item needs to be discarded. The comment has to be inserted before the discard can be confirmed.</a>
   <li>Confirm the action by clicking on <i>Delete</i> or <i>Discard</i>.</li>
 </ol>
 
