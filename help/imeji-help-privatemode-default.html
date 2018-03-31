@@ -17,7 +17,7 @@
 	<a href="#Register">Register</a><br/>
 </p>
 	
-	<h3 class="imj_sectionHeadline"><a href="#collections">Collections</a></h3>
+<h3 class="imj_sectionHeadline"><a href="#collections">Collections</a></h3>
 <p>
 	<a href="#Create_Collection">Create Collection</a><br/>
 	<a href="#Edit_Collection_Metadata">Edit Collection Information</a><br/>
@@ -26,7 +26,8 @@
 	<a href="#Delete__Discard_Collection">Delete Collection</a><br/>
 	<a href="#Subscribe_Collection">Subscribe to / Unsubscribe from Collection</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
+
+<h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
 <p>
 	<a href="#upload">File upload</a><br/>
 	<a href="#edit_item">Describe Items</a><br/>
@@ -35,21 +36,25 @@
 	<a href="#move_item">Move Items</a><br/>
 	<a href="#download_item">Download Items</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#search">Browse and Search</a></h3>
+
+<h3 class="imj_sectionHeadline"><a href="#search">Browse and Search</a></h3>
 <p>
 	<a href="#browse">Browse Items</a><br/>
 	<a href="#simple_search">Simple Search</a><br/>
 	<a href="#advanced_search">Advanced Search</a><br/>
 	<a href="#faceted_navigation">Faceted Navigation</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#manage_user_account">Manage User Account</a></h3>
+
+<h3 class="imj_sectionHeadline"><a href="#manage_user_account">Manage User Account</a></h3>
 <p>
 	<a href="#change_password">Change Password</a><br/>
 	<a href="#forgot_password">Forgot Password</a><br/>
 	<a href="#revoke_grants">Revoke Grants</a><br/>
-	<a href="#unsubscribe_collection">Unsubscribe from Collection</a><br/>
 </p>
-	<h3 class="imj_sectionHeadline"><a href="#contact">Contact</a></h3>
+
+<h3 class="imj_sectionHeadline"><a href="#contact">Contact</a></h3>
+<p></p>
+
 
 <hr style="width: 100%; height: 2px;">
 <h2 class="imj_sectionHeadline" style="padding:0"><a id="start"></a>Start</h2>
@@ -60,8 +65,9 @@
   <li>Go to the <a href="register" target="_blank">registration</a> page.</li>
   <li>Fill in the form with at least your e-mail, your family name and your organization.</li>
   <li>Agree to the Terms of Use and click on <i>Register now</i>. You will get a confirmation message via e-mail.</li>
-  <li>Click on the confirmation link from this e-mail to be redirected to a confirmation page.</li>
-  <li>On the confirmation page, enter the password that was sent with the confirmation e-mail and log into the system.</li>
+  <li>Click on the link from this e-mail to be redirected to a confirmation page.</li>	
+  <li>On the confirmation page, complete the registration by setting a password.</li>
+  <li>Afterward, you will be logged into the system automatically.</li>	
 </ol> 
 
 <p>
@@ -79,9 +85,9 @@ Collections provide the main folder structure within the system and are required
 </p>
 
 <p>
-All available collections are listed below <a href="collections?q=" target="_blank">COLLECTIONS</a>. 
-The collection list can be filtered by their state and creator. Shared collections are marked by a people icon 
-on the right side of the page.
+All available collections are listed on the <a href="collections?q=" target="_blank">COLLECTIONS</a> tab. 
+The collection list can be sorted by author, name or date modified and filtered by state or creator. Private 
+collections are marked by a person icon and shared collections by a group icon on the right side of the page.
 </p>
 
 
@@ -93,11 +99,9 @@ please contact the <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type: decimal;">
-  <li>Go to the <a href="collections?q=" target="_blank">collections</a> overview page and click on <i>New collection</i>.</li>
-  <li>Enter at least the required information (collection name, author name and organization). Information on further authors, 
-    a description of the collections content, additional information (like a link to a website or publication) and a collection 
-    logo can be added optionally. Further on, an e-mail notification on item download can be activated.</li>
-  <li>Via the plus (and minus) buttons, further fields for authors and organizations can be added (or removed).</li>
+  <li>Go to the <a href="collections?q=" target="_blank">collections list</a> and click on <i>New collection</i>.</li>
+  <li>Enter the collection information. The fields marked with an asterisk are required.</li>
+  <li>Via the plus (and minus) buttons, further fields for authors, organizations and additional information can be added (or removed).</li>
   <li>Click on <span style="font-style: italic;">Save</span>.</li>
 </ol>
 
@@ -106,7 +110,7 @@ please contact the <span style="font-style: italic;"><a href="mailto:XXX_SUPPORT
 
 <ol style="padding:0.5em 2em; list-style-type: decimal;">
   <li>Go to the collection you want to edit.</li>
-  <li>In the menu <i>Collection</i>, click on <i>Edit information</i>.</li>
+  <li>In the menu bar hover over <i>Collection</i> and click on <i>Edit information</i>.</li>
   <li>Modify the values you wish to update and <i>Save</i> them.</li> 
 </ol>
 
@@ -118,54 +122,71 @@ Three different types of sharing rights are offered for a collection:
 </p>
 
 <ul style="padding:0.5em 2.2em; list-style-type: square;">
-  <li><b>Read</b>: Permission to view the collection information as well as all included items, their files and metadata.</li>
+  <li><b>Read</b>: Permission to view the collection information as well as all included items, appended files and metadata.</li>
   <li><b>Edit</b>: Extends the Read permission by the right to edit the collection information, existing items and item licenses, 
     as well as the right to upload new files and to delete items from the collection.</li>
-  <li><b>Admin</b>: Extends the Edit permission by the right to share, to release and to delete the collection.</li>
+  <li><b>Admin</b>: Extends the Edit permission by the right to share and to delete the collection.</li>
 </ul>
 
 <p>
-To share a collection with a user or user group:
+To share a collection with a user or user group, you can either
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type: decimal;">
   <li>Go to the collection you want to share.</li>
   <li>In the menu <i>Collection</i>, click on <i>Share</i>.</li>
-  <li>Decide whether you want to share your collection with one or several individual users or with user groups:
+</ol>
+
+<p>
+or
+</p>
+
+<ol style="padding:0.5em 2em; list-style-type: decimal;">
+  <li>Go to the Collections list.</li>
+  <li>Find the collection you want to share and hover over the status icon on the right.</li>
+  <li>Click on <i>Manage</i>.</li>
+</ol>
+	
+<p>
+Afterward, decide whether you want to share your collection with one or several individual users or with user groups:
+</p>
+
+<ol style="padding:0.5em 2em; list-style-type: decimal;">
+  <li><b>Share with a user</b>:
     <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
-      <li><b>Share with a user</b>:
-        <ol style="padding:0 0 0 2em; list-style-type:lower-roman">
-  	  <li>Enter the e-mail address(es) of the user(s) you want to share the collection with. Separate several entries with semicolon.</li>
-  	  <li>Select the permission that should be shared with the user(s).</li>
-  	  <li>By activating <i>Send e-mail</i> the user(s) will get an e-mail notification about the sharing.</li>
-  	  <li>Click on <i>Share</i>.</li>
-          <li>If one or several of the chosen users haven't registered before, a message will appear where you can decide if the new 
-            user(s) should be invited to register or if you want to cancel the sharing process. 
-            Choosing <i>Invite</i> will send an e-mail with registration details to the entered e-mail address(es).</li>
-        </ol>
-      </li>
-      <li><b>Share with a user group</b>:
-	<ol style="padding:0 0 0 2em; list-style-type:lower-roman">
-          <li>Select at least one user group from the list.</li>
-	  <li>Select the permission that should be shared with the user group.</li>
-  	  <li>By activating <i>Send e-mail</i> all users within the selected user group(s) will get an e-mail notification about the sharing.</li>
-  	  <li>Click on <i>Share</i>.</li>
-	</ol>
-      </li>
+      <li>Enter the e-mail address(es) of the user(s) you want to share the collection with. Separate several entries with semicolon.</li>
+      <li>Select the permission type (Read, Edit, Admin) that should be shared with the user(s).</li>
+      <li>By activating <i>Send e-mail</i>, the user(s) will get an e-mail notification about the sharing.</li>
+      <li>Click on <i>Share</i>.</li>
+      <li>If one or several of the chosen users haven't registered before, a message will appear where you can decide if the new 
+        user(s) should be invited to register or if you want to cancel the sharing process. 
+        Choosing <i>Invite</i> will send an e-mail with registration details to the entered e-mail address(es).</li>
+    </ol>
+  </li>
+  <li><b>Share with a user group</b>:
+    <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
+      <li>Select at least one user group from the list.</li>
+      <li>Select the permission that should be shared with the user group.</li>
+      <li>By activating <i>Send e-mail</i>, all users within the selected user group(s) will get an e-mail notification about the
+        sharing.</li>
+      <li>Click on <i>Share</i>.</li>
     </ol>
   </li> 
 </ol>
 
+
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Unshare_Collection"></a>Unshare Collection</h3>
+
 <p>
 Two different methods are provided to unshare collections.
 </p>
 <ol style="padding:0.5em 2em; list-style-type:decimal">
-  <li>The <b>owner</b> of a collection can revoke sharing grants by navigating to <i>Collection</i> / <i>Share</i> and clicking on the 
-	bin icon next to the users.</li>
+  <li>The <b>owner</b> and <b>administrators</b> of a collection can revoke sharing grants by navigating to <i>Collection</i> / <i>Share</i> and clicking on the 
+    bin icons on the right hand side.</li>
   <li>A user can remove <b>received grants</b> in the user account: This method is <a href="#revoke_grants">described in Revoke Grants</a></li>
 </ol>
-	
+
+
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Delete__Discard_Collection"></a>Delete Collection</h3>
 
 <p>
@@ -178,22 +199,23 @@ To delete a collection:
   <li>Confirm the action by clicking on <i>Delete</i>.</li>
 </ol>
 
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="Subscribe_Collection"></a>Subscribe to / Unsubscribe from collection</h3>
+
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Subscribe_Collection"></a>Subscribe to / Unsubscribe from Collection</h3>
 
 <p>
 By subscribing to a collection you will receive an automatic notification if new items are added to the collection or 
 existing files are updated. The e-mail will be delivered daily and include a summary of all changes from the last 24 hours. When 
-there aren't any changes within the last 24 hours, no e-Mail will be delivered.
+there aren't any changes within the last 24 hours, no e-mail will be delivered.
 </p>
 
 <ol style=" padding:0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection you want to subscribe.</li>
+  <li>Go to the collection you want to subscribe / unsubscribe.</li>
   <li>In the menu <i>Collection</i>, click on <i>Subscribe / Unsubscribe</i>.</li>
   <li>Confirm the action by clicking on <i>Subscribe / Unsubscribe</i>.</li>
 </ol>
 
 <p>
-Collection subscriptions can be canceled via the collection page or via your user profile.
+Further on, Collection subscriptions can be canceled via your user profile.
 </p>
 
 
@@ -210,7 +232,8 @@ To upload a new file to the system:
 
 <ol style="padding:0 0 0.5em 2em; list-style-type: decimal;">
   <li>Go to the <a href="upload" target="_blank">upload</a> page.</li>
-  <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to upload your files to.</li>
+  <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to
+    upload your files.</li>
   <li>Select file(s) or drag and drop file(s) into the drop area.</li>
 </ol> 
 
@@ -225,11 +248,11 @@ Following errors may occur when trying to upload files:
       <li>The owner of the collection, if the collection has been shared. You can find the owner of the collection on the share icon.</li>
     </ul>
   </li>
-  <li><b><a id="upload_error_file_format"></a>File format not allowed</b>: For security reasons, the system restricts the list of authorized file formats. To get 
-    more information, please contact the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a>.</span></li>
-  <li><b><a id="upload_error_not_allowed_upload"></a>You do not have any permissions to upload items or create collections</b>: Your account is neither 
-    authorized to create a new collection, nor has the permission to upload files in at least one collection. Please ask the 
-    <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a> for authorization to create collections.</li>
+  <li><b><a id="upload_error_file_format"></a>File format not allowed</b>: For security reasons, the system restricts the list of 
+    authorized file formats. To get more information, please contact the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a>.</span></li>
+  <li><b><a id="upload_error_not_allowed_upload"></a>You do not have any permissions to upload items or create collections</b>: Your 
+    account is neither authorized to create a new collection, nor has the permission to upload files in at least one collection. 
+    Please ask the <a href="mailto:XXX_SUPPORT_EMAIL_XXX">support team</a> for authorization to create collections.</li>
 </ul>
 
 
@@ -237,6 +260,7 @@ Following errors may occur when trying to upload files:
 <p>
 The system offers three different ways to describe your items with metadata:
 </p>
+
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
   <li><b>Single edit</b>: <a href="#edit_item_single">Describe one item</a></li>
   <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe several items of one collection</a></li>
@@ -249,13 +273,14 @@ The system offers three different ways to describe your items with metadata:
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
   <li>Go to the item you want to describe with metadata.</li>
   <li>Click on <i>Edit</i>.</li>
-  <li>Fill the form.</li>
+  <li>Fill in the form.</li>
   <li>[If you want to add a new metadata element] Click on <i>Add metadata</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether the desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by 
-        defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is added to the form of your item.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create 
+	a new metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> 
+	the metadata element is added to the form of your item.</li>
     </ol>
   </li>
   <li>Click on <i>Save</i>.</li>
@@ -267,25 +292,25 @@ The system offers three different ways to describe your items with metadata:
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
   <li>Go to the collection containing the items you want to edit.</li>
   <li>Select the items you want to edit.</li>
-  <li>In the menu <i>X Selected Items</i>, click on <i>Edit</i>.</li>
+  <li>The menu bar shows how many items have been selected. When clicking on <i>X Selected Items</i> you can click on <i>Edit</i>.</li>
   <li>This opens a table with one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
   <li>Add new metadata elements by clicking on <i>Add Column</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether your desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by 
-        defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is added to the table.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create
+	a new metadata element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> 
+	the metadata element is added to the table.</li>
     </ol>
   </li>
   <li>Edit metadata values:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>Edit a single cell by clicking on <span class="fa fa-plus"></span> to add a new value or <span class="fa fa-times"></span> to remove a value.</li>
       <li>Add a value to a whole column by clicking on <span class="fa fa-pencil-square-o"></span> and confirming via <i>Add to all</i>.</li>
-      <li>Remove all values of a column by clicking on <span class="fa fa-times"></span> at the top of the column.
-        A column can not be removed when it is defined as default metadata by the system administrator.</li>
-      <li>Remove a column by clicking on <span class="fa fa-trash"></span> at the top of the column.</li>
+      <li>Remove all values of a column by clicking on <span class="fa fa-times"></span> at the top of the column.</li>
+      <li>Remove a column by clicking on <span class="fa fa-trash"></span> at the top of the column. A column can not be removed when it is defined as a default metadata by the system administrator.</li>
       <li>Change the name of column by clicking on <span class="fa fa-cog"></span> at the top of the column.</li>
-      <li>Hide a column by clicking on <span class="fa fa-caret-left"></span> at the top of the column.</li> 
+      <li>Hide a column by clicking on <span class="fa fa-compress"></span> at the top of the column.</li>
     </ol>
   </li>
   <li>Click on <i>Save</i>.</li>
@@ -295,22 +320,25 @@ The system offers three different ways to describe your items with metadata:
 <h4 class="imj_sectionHeadline" style="padding:0"><a id="edit_item_all"></a>Describe all Items of one Collection</h4>
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
   <li>Go to the collection containing the items you want to edit.</li>
-  <li>[If some items are selected], click on <i>Select none.</i></li>
+  <li>[If some items are selected], click on <i>Select none</i> positioned above the items.</li>
   <li>In the menu <i>X Items</i>, click on <i>Edit all</i>.</li>
   <li>Click on <i>Select metadata</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
       <li>Check whether your desired metadata element already exists and if it is available, select it from the list.</li>
-      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata element by defining a name (label), a type and optionally some predefined values. 
-      After clicking <i>Save</i> the metadata element is editable.</li>
+      <li>[If the metadata element is not available] Click on <i>Add metadata</i> at the bottom of the list. This allows you to create a new metadata 
+        element by defining a name (label), a type and optionally some predefined values. After clicking <i>Save</i> the metadata element is editable.</li>
     </ol>
   </li>
   <li>Enter a value.</li>
   <li>Choose one of the following actions to add the metadata to the collection items:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
-      <li><i>Add a new value to all</i>: The value will be added to all items of the collection, no matter whether the items already have a value for the selected metadata element.</li>
-      <li><i>Add only if value is empty</i>: The value will only be added to the items of the collection which don't have any value for the selected metadata element yet.</li>
-      <li><i>Overwrite all values</i>: The value will be added to all items of the collection. Previous values for the selected metadata element will be removed.</li>
+      <li><i>Add a new value to all</i>: The value will be added to all items of the collection, no matter whether they 
+        already have a value for the selected metadata element. As a result the metadata element may appear repeatedly.</li>
+      <li><i>Add only if value is empty</i>: The value will only be added to the items of the collection which don't have any 
+        value for the selected metadata element yet.</li>
+      <li><i>Overwrite all values</i>: The value will be added to all items of the collection. Previous values for the selected 
+        metadata element will be removed.</li>
     </ol>
   </li>
 </ol>
@@ -318,8 +346,9 @@ The system offers three different ways to describe your items with metadata:
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="edit_license"></a>Add License</h3>
 <p>
-Licenses provide users possibilities to reuse the files shared with them and their usage is highly recommended.
+Licenses regulate the reuse of files. Therefore all published items must have a license. Also for shared items, a license is highly recommended.
 </p>
+
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
   <li>Go to the collection containing the items you want to add the license to.</li>
   <li>Choose one of the following options:
@@ -335,53 +364,66 @@ Licenses provide users possibilities to reuse the files shared with them and the
       <li>Click on <i>Enter your own license</i> and enter you license information.</li>
     </ol>
   </li>
-  <li>Click on <i>Save</i>.</li>
-  <li>Choose if you want to replace the license of items that already have a license.</li>
+  <li>Click on <i>Save</i>
+    <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
+      <li>[If the collection is private] Choose if you want to replace the license of items that already have a license.</li>
+      <li>[If the collection is released] The new license will be added to the item(s). Previous license will be discarded with a timestamp.</li>
+    </ol>
+  </li>
 </ol>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="delete_item"></a>Delete Items</h3>
+
 <p>
 To delete items:
 </p>
 
 <ol style="padding:0 0 0.5em 2em; list-style-type: decimal;">
-  <li>Go to the collection containing the items you want to delete.</li>
-  <li>Choose one the following option:
-    <ol style="padding:0 0 0 2em; list-style-type: lower-roman;">
-      <li>Go to item and click on <i>Delete</i>.</li>
-      <li>Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
-      <li>Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
+  <li>Go to the collection containing the items you want to delete.
+  <li>Choose one the following options:
+    <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
+      <li>Delete one item: Go to item and click on <i>Delete</i>.</li>
+      <li>Delete several items: Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
+      <li>Delete all items of a collection: Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
     </ol>
   </li>
-  <li>Confirm the action by clicking on <i>Delete</i>.</li>
+   <li>Confirm the action by clicking on <i>Delete</i>.</li>
 </ol>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="move_item"></a>Move Items</h3>
+
 <p>
 To move items from one collection to another:
 </p>
+
 <ol style="padding:0 0 0.5em 2em; list-style-type: decimal;">
   <li>Go to the collection containing the items you want to move.</li>
   <li>Choose one of the following options:
     <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
-      <li>Go to the item and click on <i>Move</i>.</li>
-      <li>Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
+      <li>Move one item: Go to the item and click on <i>Move</i>.</li>
+      <li>Move several items: Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
     </ol>
   </li>
-  <li>Select the collection you want to move the item(s) to from the list of all collections you have at least editing rights for.</li>
+  <li>To select the target collection, you can either
+    <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
+      <li>Pick an existing collection or subcollection from the list displayed or</li>
+      <li>Create a new subcollection by clicking on <span class="fa fa-plus"></span> on the right side of the parent collection and providing a name for the new subcollection.</li>
+     </ol>
+   </li>
 </ol>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="download_item"></a>Download Items</h3>
+
 <p>
 There are different ways to download items:
 </p>
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
-  <li>Go to the item and click on Download <i>file</i>.</li>
+  <li>Go to the item and click on <i>Download file</i>.</li>
   <li>Select one or several items within a collection and click on <i>Download selected (X files)</i> in the menu.</li>
-  <li>Go to one collection and click on <i>Download (X files)</i> to download all items of the collection.</li>	
+  <li>Go to one collection and click on <i>Download (X files)</i> to download all items of the collection. The items will be downloaded in a .zip-file.</li>	
 </ul>
 
 
@@ -413,16 +455,16 @@ The Simple Search box is offered in the top navigation bar of each page. It allo
 <h3 class="imj_sectionHeadline"><a id="advanced_search"></a>Advanced Search</h3>
 
 <p>
-The advanced search is restricted to items and compatible with the <a href="https://github.com/MPDL/imeji/wiki/imeji-search-syntax" target="_blank">internal search syntax</a>.
+The advanced search is restricted to items and is compatible with the <a href="https://github.com/MPDL/imeji/wiki/imeji-search-syntax" target="_blank">internal search syntax</a>.
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type: decimal;">
-  <li>Go to the <a href="search" target="_blank">advanced search page</a> by clicking on <span class="fa fa-sliders"></span> next to the Simple Search box.</li>
+  <li>Go to the <a href="search" target="_blank">advanced search page</a> via the <span class="fa fa-sliders"></span> next to the Simple Search box.</li>
   <li>Search for
     <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
       <li>All fields (all available item metadata and optionally the full text)</li>
       <li>Specific metadata elements</li>
-      <li>File types (video, audio, docuument, image)</li>
+      <li>File types (video, audio, document, image)</li>
       <li>Licenses</li>
       <li>Technical metadata of the items</li>
     </ol>
@@ -436,7 +478,6 @@ The advanced search is restricted to items and compatible with the <a href="http
 Faceted navigation allows you to navigate the list of available items by applying multiple filters using metadata values/attributes assigned to them.
 Facets are displayed in a collection view and items view on the left-hand side of the displayed items.
 </p>
-
 
 <h4 class="imj_sectionHeadline" style="padding:0">Select Facet</h4>
 
@@ -455,11 +496,16 @@ The displayed items will be refreshed and the selected facet is shown above the 
   <li><b>Number and Date</b>: Click on "x" next to a facet above the items.</li>
 </ol>
 
+
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
-
 <hr style="width: 100%; height: 2px;">
-
 <h2 class="imj_sectionHeadline" style="padding:0"><a id="manage_user_account"></a>Manage User Account</h2>
+
+<p>
+Click on your user name in the top navigation bar to access your profile page. Beside of your account details, this page 
+also includes your current data quota and displays how much of the allocated disk space is already occupied.
+</p>
+
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="change_password"></a>Change Password</h3>
 
 <p>
@@ -467,7 +513,7 @@ You have to be logged in.
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type: decimal;">
-  <li>Go to your <i>user page</i> by clicking on your user name in the top navigation bar.</li>
+  <li>Go to your <i>user page</i> by clicking on your user name in the top navigation bar and select <i>Change password</i>.</li>
   <li>Enter your new password twice (<i>New password</i> and <i>Repeat password</i>).</li>
   <li>Click on <i>Change password</i>. Your new password is saved.</li>
 </ol> 
@@ -486,14 +532,6 @@ After entering your e-mail address, the system will send you a link which can be
 To revoke grants for a collection, go to your <i>user page</i> by clicking on your user name in the top navigation bar. Scroll down to 
 the <i>User Grants</i> section and click on <span style="font-style: italic;">Revoke</span> next to the collection name.	
 </p>
-
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="unsubscribe_collection"></a>Unsubscribe from Collection</h3>
-
-<p>
-To unsubscribe from a collection, go to your <i>user page</i> by clicking on your user name in the top navigation bar. Scroll down to 
-the <i>User subscriptions</i> section and click on <span class="fa fa-times"></span> next to the collection name.
-</p>
-
 
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
 <hr style="width: 100%; height: 2px;">
