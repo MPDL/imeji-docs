@@ -23,6 +23,7 @@
 	<a href="#Unshare_Collection">Unshare Collection</a><br/>
 	<a href="#Delete__Discard_Collection">Delete Collection</a><br/>
 	<a href="#Subscribe_Collection">Subscribe to / Unsubscribe from Collection</a><br/>
+	<a href="#Manage_Subcollection">Manage Subcollections</a><br/>
 </p>
 
 <h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
@@ -205,6 +206,21 @@ Further on, Collection subscriptions can be canceled via your user profile.
 </p>
 
 
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Manage_Subcollection"></a>Manage Subcollections</h3>
+
+<p>
+Subcollections can be used to organize the uploaded files into a hierarchical folder structure. Within each collection, subcollections 
+will be listed first and are marked by a folder icon. Following methods are supported for subcollections:
+</p>
+
+<ul style="padding:0.5em 2.2em; list-style-type: square;">
+  <li><b>Create</b>: Go to any collection or subcollection and click on <i>+ Subcollection</i>.</li>
+  <li><b>Edit name</b>: Go to the subcollection and <i>Edit name</i> from the collection menu.</li>
+  <li><b>Move</b>: Go to the subcollection and select <i>Move</i> from the collection menu.</li>
+  <li><b>Delete</b>: Go to the subcollection and select <i>Delete</i> from the collection menu.</li>
+</ul>
+
+
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
 <hr style="width: 100%; height: 2px;">
 
@@ -251,7 +267,7 @@ The system offers three different ways to describe your items with metadata:
 
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
   <li><b>Single edit</b>: <a href="#edit_item_single">Describe one item</a></li>
-  <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe several items of one collection</a></li>
+  <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe multiple items</a></li>
   <li><b>Collection edit</b>: <a href="#edit_item_all">Describe all items of one collection</a></li>
 </ul>
 
@@ -275,13 +291,14 @@ The system offers three different ways to describe your items with metadata:
 </ol>
 
 
-<h4 class="imj_sectionHeadline" style="padding:0">Describe several Items of one Collection</h4>
+<h4 class="imj_sectionHeadline" style="padding:0">Describe multiple Items</h4>
 
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection containing the items you want to edit.</li>
-  <li>Select the items you want to edit.</li>
-  <li>The menu bar shows how many items have been selected. When clicking on <i>X Selected Items</i> you can click on <i>Edit</i>.</li>
-  <li>This opens a table with one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
+  <li>Select the items you want to edit via any items list or a search result.</li>
+  <li>The menu bar shows how many items have been selected. Click on <i>X Selected Items</i> to display the menu and select <i>Edit</i>.</li>
+  <li>This opens the edit interface as table in full screen. Click on <i>Close</i> at the bottom to leave the full screen without any changes.</li>
+  <li>If you are not allowed to edit all of the selected items, a corresponding message will be displayed above the table.</li>
+  <li>The edit table includes one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
   <li>Add new metadata elements by clicking on <i>Add Column</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
@@ -334,8 +351,7 @@ The system offers three different ways to describe your items with metadata:
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="edit_license"></a>Add License</h3>
 <p>
-Licenses regulate the reuse of files. Therefore all published items must have a license. Also for shared items, a 
-license is highly recommended.
+Licenses regulate the reuse of files and inform users of their rights. Therefore it is recommended to add license information to shared items.
 </p>
 
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
@@ -369,7 +385,7 @@ To delete items:
   <li>Choose one the following options:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>Delete one item: Go to item and click on <i>Delete</i>.</li>
-      <li>Delete several items: Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
+      <li>Delete multiple items: Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
       <li>Delete all items of a collection: Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
     </ol>
   </li>
@@ -388,7 +404,7 @@ To move items from one collection to another:
   <li>Choose one of the following options:
     <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
       <li>Move one item: Go to the item and click on <i>Move</i>.</li>
-      <li>Move several items: Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
+      <li>Move multiple items: Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
     </ol>
   </li>
   <li>To select the target collection, you can either
@@ -407,7 +423,7 @@ There are different ways to download items:
 </p>
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
   <li>Go to the item and click on <i>Download file</i>.</li>
-  <li>Select one or several items within a collection and click on <i>Download selected (X files)</i> in the menu.</li>
+  <li>Select multiple items within a collection and click on <i>Download selected (X files)</i> in the menu.</li>
   <li>Go to one collection and click on <i>Download (X files)</i> to download all items of the collection. The items will be downloaded in a .zip-file.</li>	
 </ul>
 
