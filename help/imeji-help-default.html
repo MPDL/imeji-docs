@@ -23,11 +23,12 @@
 	<a href="#Edit_Collection_Metadata">Edit Collection Information</a><br/>
 	<a href="#Share_Collection">Share Collection</a><br/>
 	<a href="#Unshare_Collection">Unshare Collection</a><br/>
-	<a href="#Release_Collection">Release Collection</a><br/>
+	<a href="#Release_Collection">Publish Collection</a><br/>
 	<a href="#Delete__Discard_Collection">Delete / Discard Collection</a><br/>
 	<a href="#Assign_DOI_to_Collection">Assign DOI to Collection</a><br/>
 	<a href="#Cite_Collection">Cite Collection</a><br/>
 	<a href="#Subscribe_Collection">Subscribe to / Unsubscribe from Collection</a><br/>
+	<a href="#Manage_Subcollection">Manage Subcollections</a><br/>
 </p>
 
 <h3 class="imj_sectionHeadline"><a href="#items">Items</a></h3>
@@ -89,9 +90,9 @@ Collections provide the main folder structure within the system and are required
 
 <p>
 All available collections are listed below the <a href="collections?q=" target="_blank">COLLECTIONS</a> tab. If the user is 
-not logged in, only released collections are displayed. Logged in users will also see private and discarded collections 
+not logged in, only published collections are displayed. Logged in users will also see private and discarded collections 
 visible to them. The collection list can be sorted by author, name or date modified (no login required) and 
-filtered by state or creator (login required). Released collections are marked by a globe icon, private collections by a
+filtered by state or creator (login required). Published collections are marked by a globe icon, private collections by a
 person icon and shared collections by a group icon on the right side of the page.
 </p>
 
@@ -130,7 +131,7 @@ Three different types of sharing rights are offered for a collection:
   <li><b>Read</b>: Permission to view the collection information as well as all included items, appended files and metadata.</li>
   <li><b>Edit</b>: Extends the Read permission by the right to edit the collection information, existing items and item licenses, 
     as well as the right to upload new files and to delete/discard items from the collection.</li>
-  <li><b>Admin</b>: Extends the Edit permission by the right to share, to release and to delete/discard the collection.</li>
+  <li><b>Admin</b>: Extends the Edit permission by the right to share, to publish and to delete/discard the collection.</li>
 </ul>
 
 <p>
@@ -193,33 +194,33 @@ Two different methods are provided to unshare collections.
 </ol>
 
 
-<h3 class="imj_sectionHeadline" style="padding:0"><a id="Release_Collection"></a>Release Collection</h3>
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Release_Collection"></a>Publish Collection</h3>
 
 <p>
-You can only release private collections. A release makes the collection and all its content permanently visible to the public. Afterward, 
+You can only publish private collections. A publication makes the collection and all its content permanently visible to the public. Afterward, 
 neither the collection nor the items can be deleted any longer, they need to be <a href="#delete_item">discarded</a> instead. But a 
-release does not freeze the collection completely, in particular new items can still be added and metadata keeps editable, too.
+publication does not freeze the collection completely, in particular new items can still be added and metadata keeps editable, too.
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection you want to release.</li>
-  <li>In the menu <i>Collection</i>, click on <i>Release</i>.</li>
+  <li>Go to the collection you want to publish.</li>
+  <li>In the menu <i>Collection</i>, click on <i>Publish</i>.</li>
   <li>A confirmation message appears which includes the information on how many items within the collection do not have a license 
-    assigned. These items will automatically get the default license if you continue the release. In order to avoid this, click on 
+    assigned. These items will automatically get the default license if you continue with the publicatoin. In order to avoid this, click on 
     <i>Cancel</i> and do the license assignment manually (see <a href="#edit_license">Add license</a>).</li>
-  <li>Click on <i>Release</i>.</li>
+  <li>Click on <i>Publish</i>.</li>
 </ol>
 
 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Delete__Discard_Collection"></a>Delete / Discard Collection</h3>
 
 <p>
-Private collections can be deleted, released collections discarded. The difference between the two options is:
+Private collections can be deleted, published collections discarded. The difference between the two options is:
 </p>
 
 <ol style="padding:0.5em 2em; list-style-type:square">
   <li><b>Deleted</b> collections will be vanished from the system without any traces.</li>
-  <li><b>Discarded</b> collections have been released before and, therefore, need to be kept persistent. Discarded means that the 
+  <li><b>Discarded</b> collections have been published before and, therefore, need to be kept persistent. Discarded means that the 
     collection and all included items are not listed via the standard search and browse functionalities any longer. But some basic
     metadata and the discard comment will be kept and displayed if the collection is requested via its URL or DOI. Further on, the
     collection administrator can still see the remaining information when filtering his collection list for discarded collections.</li>
@@ -234,8 +235,8 @@ To delete / discard a collection:
   <li>In the menu <i>Collection</i>, click on
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>[If the collection is private] <i>Delete</i>.</li>
-      <li>[If the collection is released] <i>Discard</i>.</li>
-      <li>[If the collection is released] Enter a discard comment which explains why the collection needs to be discarded. The 
+      <li>[If the collection is published] <i>Discard</i>.</li>
+      <li>[If the collection is published] Enter a discard comment which explains why the collection needs to be discarded. The 
         comment has to be inserted before the discard can be confirmed.</li>
       <li>Confirm the action by clicking on <i>Delete</i> or <i>Discard</i>.</li>
     </ol>
@@ -246,7 +247,7 @@ To delete / discard a collection:
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="Assign_DOI_to_Collection"></a>Assign DOI to Collection</h3>
 
 <p>
-You can only assign a DOI to a released collection and you can only assign one DOI per collection. That means as soon as a collection
+You can only assign a DOI to a published collection and you can only assign one DOI per collection. That means as soon as a collection
 already has a DOI, this functionality is not possible any more.
 </p>
 
@@ -285,6 +286,22 @@ there aren't any changes within the last 24 hours, no e-mail will be delivered.
 Further on, Collection subscriptions can be canceled via your user profile.
 </p>
 
+<h3 class="imj_sectionHeadline" style="padding:0"><a id="Manage_Subcollection"></a>Manage Subcollections</h3>
+
+<p>
+Subcollections can be used to organize the uploaded files into a hierarchical folder structure. Within each collection, subcollections 
+will be listed first and are marked by a folder icon. Following methods are supported for subcollections:
+</p>
+
+<ul style="padding:0.5em 2.2em; list-style-type: square;">
+  <li><b>Create<b>: Go to any collection or subcollection and click on <i>+ Subcollection</i>.</li>
+  <li><b>Edit name<b>: Go to the subcollection and <i>Edit name</i> from the collection menu.</li>
+  <li><br>Move<i> (for private collections): Go to the subcollection and select <i>Move</i> from the collection menu.</li>
+  <li><br>Delete<i> (for private collections): Go to the subcollection and select <i>Delete</i> from the collection menu.</i>.</li>
+  <li><br>Discard<i> (for published collections): Go to the subcollection and select <i>Discard</i> from the collection menu.</i>.</li>
+</ul>
+
+
 
 <p><a href="#"><span style="font-style: italic;">top</span></a></p>
 <hr style="width: 100%; height: 2px;">
@@ -301,7 +318,7 @@ To upload a new file to the system:
   <li>Go to the <a href="upload" target="_blank">upload</a> page.</li>
   <li>Choose an existing collection for the upload by selecting one or <a href="#Create_Collection">create a new collection</a> to
     upload your files.</li>
-  <li>If you choose a released collection (marked by the globe icon in front of the collection name), you have to choose a license 
+  <li>If you choose a published collection (marked by the globe icon in front of the collection name), you have to choose a license 
     for the new file(s).</li>
   <li>Select file(s) or drag and drop file(s) into the drop area.</li>
 </ol> 
@@ -334,7 +351,7 @@ The system offers three different ways to describe your items with metadata:
 
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
   <li><b>Single edit</b>: <a href="#edit_item_single">Describe one item</a></li>
-  <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe several items of one collection</a></li>
+  <li><b>Batch edit</b>: <a href="#edit_item_selected">Describe multiple items</a></li>
   <li><b>Collection edit</b>: <a href="#edit_item_all">Describe all items of one collection</a></li>
 </ul>
 
@@ -358,13 +375,14 @@ The system offers three different ways to describe your items with metadata:
 </ol>
 
 
-<h4 class="imj_sectionHeadline" style="padding:0">Describe several Items of one Collection</h4>
+<h4 class="imj_sectionHeadline" style="padding:0">Describe multiple Items</h4>
 
 <ol style="padding:0 0 0.5em 2em; list-style-type:decimal">
-  <li>Go to the collection containing the items you want to edit.</li>
-  <li>Select the items you want to edit.</li>
-  <li>The menu bar shows how many items have been selected. When clicking on <i>X Selected Items</i> you can click on <i>Edit</i>.</li>
-  <li>This opens a table with one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
+  <li>Select the items you want to edit via a collection list, a search result or the <a href="browse" target="_blank">ITEMS</a> list.</li>
+  <li>The menu bar shows how many items have been selected. Click on <i>X Selected Items</i> to display the menu and select <i>Edit</i>.</li>
+  <li>This opens the edit interface as table in full screen. Click on <i>Close</i> at the bottom to leave the full screen without any changes.</li>
+  <li>If you are not allowed to edit all of the selected items, a corresponding message will be displayed above the table.</li>
+  <li>The edit table includes one row per item. The columns represent the metadata elements used by the selected items and some default metadata.</li>
   <li>Add new metadata elements by clicking on <i>Add Column</i>:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>A list with all existing metadata elements will be displayed.</li>
@@ -425,7 +443,7 @@ Licenses regulate the reuse of files. Therefore all published items must have a 
   <li>Choose one of the following options:
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>Single edit: Go to the item and click on <i>Edit</i>. Together with all the other metadata, the license is displayed at the top of the form and can be edited.</li>
-      <li>Batch edit: Select some items and click on <i>Edit licenses</i> in menu <i>X Selected Items</i>.</li>
+      <li>Batch edit: Select some items and click on <i>Edit licenses</i> in the menu <i>X Selected Items</i>.</li>
       <li>Collection edit: Click on <i>Edit licenses</i> in menu <i>X Items</i> (ensure that no item is selected).</li>
     </ol>
   </li>
@@ -438,7 +456,7 @@ Licenses regulate the reuse of files. Therefore all published items must have a 
   <li>Click on <i>Save</i>
     <ol style="padding:0 0 0 2em; list-style-type:lower-alpha">
       <li>[If the collection is private] Choose if you want to replace the license of items that already have a license.</li>
-      <li>[If the collection is released] The new license will be added to the item(s). Previous license will be discarded with a timestamp.</li>
+      <li>[If the collection is published] The new license will be added to the item(s). Previous license will be discarded with a timestamp.</li>
     </ol>
   </li>
 </ol>
@@ -447,12 +465,12 @@ Licenses regulate the reuse of files. Therefore all published items must have a 
 <h3 class="imj_sectionHeadline" style="padding:0"><a id="delete_item"></a>Delete / Discard Items</h3>
 
 <p>
-Items within private collections can be deleted, items within released collections discarded. The difference between these two options is:
+Items within private collections can be deleted, items within published collections discarded. The difference between these two options is:
 </p>
 
 <ul style="padding:0.5em 2.2em; list-style-type: square;">
   <li><b>Deleted</b> items will be vanished from the system without any traces.</li>
-  <li><b>Discarded</b> items have been published within a released collection before and, therefore, need to be kept persistent. Discarded means that the item itself cannot be 
+  <li><b>Discarded</b> items have been published within a published collection before and, therefore, need to be kept persistent. Discarded means that the item itself cannot be 
   be retrieved via the standard search and browse functionalities any longer, but the item metadata is still displayed if a user filters the content of a collection for discarded items.</li>
 </ul>
 
@@ -466,19 +484,19 @@ To delete / discard items:
       <li>[If the collection is private] Choose one the following options:
         <ol style="padding:0 0 0 2em; list-style-type: lower-roman;">
           <li>Delete one item: Go to item and click on <i>Delete</i>.</li>
-          <li>Delete several items: Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
+          <li>Delete multiple items: Select some items and click on <i>Delete</i> in the menu <i>X Selected Items</i>.</li>
           <li>Delete all items of a collection: Click on <i>Delete all</i> in the menu <i>X Items</i> (ensure that no item is selected).</li>
         </ol>
       </li>
-      <li>[If the collection is released] Choose one of the following options:
+      <li>[If the collection is published] Choose one of the following options:
         <ol style="padding:0 0 0 2em; list-style-type: lower-roman;">
           <li>Discard one item: Go to the item and click on <i>Discard</i>.</li>
-          <li>Discard several items: Select some items and click on <i>Discard items</i> in the menu <i>X Selected Items</i>.</li>
+          <li>Discard multiple items: Select some items and click on <i>Discard items</i> in the menu <i>X Selected Items</i>.</li>
         </ol>
       </li>
     </ol>
   </li>
-  <li>[If the collection is released] Enter a discard comment which explains why the item needs to be discarded. The comment has to be inserted before the discard can be confirmed.</a>
+  <li>[If the collection is published] Enter a discard comment which explains why the item needs to be discarded. The comment has to be inserted before the discard can be confirmed.</a>
   <li>Confirm the action by clicking on <i>Delete</i> or <i>Discard</i>.</li>
 </ol>
 
@@ -494,7 +512,7 @@ You can only move items from private collections. You can't move items into a co
   <li>Choose one of the following options:
     <ol style="padding:0 0 0 2em; list-style-type: lower-alpha;">
       <li>Move one item: Go to the item and click on <i>Move</i>.</li>
-      <li>Move several items: Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
+      <li>Move multiple items: Select some items and click on <i>Move</i> in the menu <i>X Selected Items</i>.</li>
     </ol>
   </li>
   <li>To select the target collection, you can either
@@ -503,7 +521,7 @@ You can only move items from private collections. You can't move items into a co
       <li>Create a new subcollection by clicking on <span class="fa fa-plus"></span> on the right side of the parent collection and providing a name for the new subcollection.</li>
      </ol>
    </li>
-  <li>[If the target collection is released] Select a license for the moved items and click on <i>Move</i>.</li>
+  <li>[If the target collection is published] Select a license for the moved items and click on <i>Move</i>.</li>
 </ol>
 
 
@@ -514,7 +532,7 @@ There are different ways to download items:
 </p>
 <ul style="padding:0 0 0.5em 2.2em; list-style-type: square;">
   <li>Go to the item and click on <i>Download file</i>.</li>
-  <li>Select one or several items within a collection and click on <i>Download selected (X files)</i> in the menu.</li>
+  <li>Select one or multiple items within a collection and click on <i>Download selected (X files)</i> in the menu.</li>
   <li>Go to one collection and click on <i>Download (X files)</i> to download all items of the collection. The items will be downloaded in a .zip-file.</li>	
 </ul>
 
@@ -527,7 +545,7 @@ There are different ways to download items:
 <h3 class="imj_sectionHeadline"><a id="browse"></a>Browse Items</h3>
 
 <p>
-Click on <a href="browse" target="_blank">ITEMS</a> to view the list of available items, comprising all released items and private items visible to you.
+Click on <a href="browse" target="_blank">ITEMS</a> to view the list of available items, comprising all published items and private items visible to you.
 </p>
 
 
